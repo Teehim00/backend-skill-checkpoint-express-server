@@ -3,7 +3,6 @@ import connectionPool from "../utils/db.mjs";
 import { validateCreateQuestionData } from "../middlewares/question.validation.mjs";
 import { validateCreateAnswerData } from "../middlewares/answer.validation.mjs";
 
-// ใช้ express.json() เพื่อให้สามารถอ่าน body ที่เป็น JSON ได้
 
 const questionsRouter = Router();
 
