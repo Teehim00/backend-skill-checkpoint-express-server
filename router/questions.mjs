@@ -3,7 +3,6 @@ import connectionPool from "../utils/db.mjs";
 import { validateCreateQuestionData } from "../middlewares/question.validation.mjs";
 import { validateCreateAnswerData } from "../middlewares/answer.validation.mjs";
 
-
 const questionsRouter = Router();
 
 questionsRouter.post("/", [validateCreateQuestionData], async (req, res) => {
